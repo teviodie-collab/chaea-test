@@ -42,6 +42,9 @@
                     <p style="margin-top: 10px;">
                         A través de 80 afirmaciones de respuesta simple, el CHAEA evalúa cuatro estilos de aprendizaje: Activo, Reflexivo, Teórico y Pragmático. Los resultados no determinan capacidades ni niveles de rendimiento, sino que ofrecen información valiosa para comprender las propias preferencias de aprendizaje, favoreciendo estrategias de estudio más efectivas y un mejor aprovechamiento de las experiencias educativas.
                     </p>
+                    <p style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1; font-size: 13px; color: #555;">
+                        <strong>🔒 Uso de datos y confidencialidad:</strong> Las respuestas registradas en este cuestionario son <strong>completamente anónimas</strong>. El casillero del nombre es totalmente opcional y podés dejarlo en blanco si lo preferís. Toda la información de edad y ubicación geográfica recolectada se procesará de manera confidencial y se utilizará exclusivamente para generar estadísticas reales y agrupar los perfiles de aprendizaje.
+                    </p>
                 </div>
                 
                 <p style="font-size: 16px; color: #666; margin: 0; font-weight: 600;">
@@ -71,6 +74,64 @@
                             </select>
                         </div>
                     </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                        <div>
+                            <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Provincia *</label>
+                            <select id="reg-provincia" required onchange="controlarDespliegueMendoza()" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; background: white; outline: none; font-family: inherit;">
+                                <option value="" disabled selected>Seleccioná tu provincia...</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                                <option value="Catamarca">Catamarca</option>
+                                <option value="Chaco">Chaco</option>
+                                <option value="Chubut">Chubut</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Corrientes">Corrientes</option>
+                                <option value="Entre Ríos">Entre Ríos</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Jujuy">Jujuy</option>
+                                <option value="La Pampa">La Pampa</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Misiones">Misiones</option>
+                                <option value="Neuquén">Neuquén</option>
+                                <option value="Río Negro">Río Negro</option>
+                                <option value="Salta">Salta</option>
+                                <option value="San Juan">San Juan</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="Santiago del Estero">Santiago del Estero</option>
+                                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                <option value="Tucumán">Tucumán</option>
+                            </select>
+                        </div>
+                        <div id="contenedor-departamento" class="hidden">
+                            <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Departamento *</label>
+                            <select id="reg-departamento" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; background: white; outline: none; font-family: inherit;">
+                                <option value="" disabled selected>Seleccioná tu departamento...</option>
+                                <option value="Capital">Capital</option>
+                                <option value="General Alvear">General Alvear</option>
+                                <option value="Godoy Cruz">Godoy Cruz</option>
+                                <option value="Guaymallén">Guaymallén</option>
+                                <option value="Junín">Junín</option>
+                                <option value="La Paz">La Paz</option>
+                                <option value="Las Heras">Las Heras</option>
+                                <option value="Lavalle">Lavalle</option>
+                                <option value="Luján de Cuyo">Luján de Cuyo</option>
+                                <option value="Maipú">Maipú</option>
+                                <option value="Malargüe">Malargüe</option>
+                                <option value="Rivadavia">Rivadavia</option>
+                                <option value="San Carlos">San Carlos</option>
+                                <option value="San Martín">San Martín</option>
+                                <option value="San Rafael">San Rafael</option>
+                                <option value="Santa Rosa">Santa Rosa</option>
+                                <option value="Tunuyán">Tunuyán</option>
+                                <option value="Tupungato">Tupungato</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div style="text-align: right; margin-top: 30px;">
                         <button type="submit" style="background: #4a6b0a; color: #ffffff; font-weight: 700; font-size: 17px; padding: 14px 40px; border-radius: 10px; border: none; cursor: pointer; letter-spacing: 0.5px; transition: background 0.2s;">
                             Comenzar Cuestionario →
@@ -142,7 +203,7 @@
                 </div>
                 <div>
                     <h4 style="color: #4A6500; font-weight: 700; font-size: 15px;">📐 Estilo Teórico</h4>
-                    <p style="text-align: justify;">Buscás la lógica, la coherence y la estructura en todo lo que estudiás. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso. Te molesta la falta de orden, la confusión o las ideas desorganizadas.</p>
+                    <p style="text-align: justify;">Buscás la lógica, la coherencia y la estructura en todo lo que estudiás. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso. Te molesta la falta de orden, la confusión o las ideas desorganizadas.</p>
                 </div>
                 <div>
                     <h4 style="color: #C8DB84; font-weight: 700; font-size: 15px;">🛠️ Estilo Pragmático</h4>
@@ -161,11 +222,27 @@
         </div>
 
         <footer style="text-align: center; margin-top: 40px; font-size: 12px; color: #777; font-weight: 600; line-height: 1.5;" class="no-print">
-            @2026 Sitio creado con fines educativos para el MOOC "Estrategias de aprendizaje" del Programa Descubrí UNCUYO, de la Universidad Nacional de Cuyo 
+            Sitio creado con fines educativos para el MOOC "Estrategias de aprendizaje" del Programa Descubrí UNCUYO, de la Universidad Nacional de Cuyo en 
         </footer>
     </div>
 
     <script>
+        // Función dinámica para el selector de Mendoza
+        function controlarDespliegueMendoza() {
+            const provincia = document.getElementById('reg-provincia').value;
+            const contenedorDepto = document.getElementById('contenedor-departamento');
+            const selectDepto = document.getElementById('reg-departamento');
+            
+            if (provincia === "Mendoza") {
+                contenedorDepto.classList.remove('hidden');
+                selectDepto.setAttribute('required', 'true');
+            } else {
+                contenedorDepto.classList.add('hidden');
+                selectDepto.removeAttribute('required');
+                selectDepto.value = "";
+            }
+        }
+
         const preguntas = [
             { id: 1, texto: "Tengo fama de decir lo que pienso claramente sin rodeos.", estilo: "pragmatico" },
             { id: 2, texto: "Estoy seguro(a) de lo que es bueno y lo que es malo, lo que está bien y lo que esta mal.", estilo: "teorico" },
@@ -258,12 +335,19 @@
 
         function iniciarCuestionario(e) {
             e.preventDefault();
+            
+            const provinciaSel = document.getElementById('reg-provincia').value;
+            const deptoSel = document.getElementById('reg-departamento').value;
+            const ubicacionStr = provinciaSel === "Mendoza" ? `Mendoza (${deptoSel})` : provinciaSel;
+
             datosEstudiante = {
                 nombre: document.getElementById('reg-nombre').value || 'Anónimo',
                 edad: document.getElementById('reg-edad').value,
                 genero: document.getElementById('reg-genero').value,
+                ubicacion: ubicacionStr,
                 fecha: new Date().toLocaleDateString()
             };
+            
             document.getElementById('pantalla-registro').classList.add('hidden');
             document.getElementById('pantalla-test').classList.remove('hidden');
             renderizarBloque();
@@ -375,7 +459,7 @@
             document.getElementById('pantalla-test').classList.add('hidden');
             document.getElementById('pantalla-resultados').classList.remove('hidden');
 
-            document.getElementById('res-metadata').innerText = `Estudiante: ${datosEstudiante.nombre} | Edad: ${datosEstudiante.edad} años | Género: ${datosEstudiante.genero} | Fecha: ${datosEstudiante.fecha}`;
+            document.getElementById('res-metadata').innerText = `Estudiante: ${datosEstudiante.nombre} | Edad: ${datosEstudiante.edad} años | Género: ${datosEstudiante.genero} | Ubicación: ${datosEstudiante.ubicacion} | Fecha: ${datosEstudiante.fecha}`;
 
             const cuerpo = document.getElementById('tabla-cuerpo');
             cuerpo.innerHTML = '';
