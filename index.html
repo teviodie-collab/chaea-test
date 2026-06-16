@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario Honey-Alonso (CHAEA)</title>
+    <title>Cuestionario Honey-Alonso (CHAEA-Junior)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
         /* Estilos de impresión optimizados */
         @media print {
             body { background: white; color: black; padding: 0; }
@@ -17,18 +24,21 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen py-12 px-4" style="font-family: 'Trebuchet MS', Arial, sans-serif;">
+<body class="bg-gray-100 min-h-screen py-12 px-4">
 
     <div class="max-w-[900px] mx-auto">
         
         <div id="pantalla-registro" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
             
             <div style="text-align: center; margin-bottom: 35px;">
-                <h1 style="color: #7ca000; font-size: 38px; margin: 0 0 10px 0; font-weight: bold;">
-                    Cuestionario Honey-Alonso (CHAEA)
+                <h1 style="color: #7ca000; font-size: 34px; margin: 0 0 15px 0; font-weight: 700; line-height: 1.2;">
+                    Cuestionario Honey-Alonso (CHAEA-Junior)
                 </h1>
-                <p style="font-size: 18px; color: #666; margin: 0;">
-                    Completá tus datos para comenzar el test automatizado de Estilos de Aprendizaje.
+                <div style="font-size: 15px; color: #444; margin: 0 auto 25px auto; text-align: justify; line-height: 1.6; max-w-[780px]; background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
+                    <strong>Créditos del Cuestionario:</strong> Este instrumento es una adaptación científica del clásico Cuestionario de Estilos de Aprendizaje de Honey y Alonso (CHAEA), validada específicamente para estudiantes de nivel Primario y Secundario en base a las investigaciones del especialista Juan Francisco Sotillo Delgado (UNED, España). Su estructura lúdica y directa permite identificar cómo procesás y asimilás las nuevas experiencias educativas según una concepción cíclica del aprendizaje.
+                </div>
+                <p style="font-size: 16px; color: #666; margin: 0; font-weight: 600;">
+                    Completá tus datos para comenzar el test automatizado.
                 </p>
             </div>
 
@@ -36,15 +46,15 @@
                 <form id="form-registro" onsubmit="iniciarCuestionario(event)" class="space-y-5">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
-                            <label style="display: block; font-weight: bold; color: #555; margin-bottom: 5px; font-size: 15px;">Nombre Completo <span style="color: #aaa; font-weight: normal;">(Opcional)</span></label>
-                            <input type="text" id="reg-nombre" placeholder="Ej: Juan Pérez" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; font-family: inherit;">
+                            <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Nombre <span style="color: #aaa; font-weight: normal;">(Opcional)</span></label>
+                            <input type="text" id="reg-nombre" placeholder="" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; font-family: inherit;">
                         </div>
                         <div>
-                            <label style="display: block; font-weight: bold; color: #555; margin-bottom: 5px; font-size: 15px;">Edad *</label>
-                            <input type="number" id="reg-edad" required min="10" max="99" placeholder="Ej: 21" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; font-family: inherit;">
+                            <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Edad *</label>
+                            <input type="number" id="reg-edad" required min="9" max="19" placeholder="Ej: 13" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; font-family: inherit;">
                         </div>
                         <div>
-                            <label style="display: block; font-weight: bold; color: #555; margin-bottom: 5px; font-size: 15px;">Género *</label>
+                            <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Género *</label>
                             <select id="reg-genero" required style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; background: white; outline: none; font-family: inherit;">
                                 <option value="" disabled selected>Seleccioná...</option>
                                 <option value="Femenino">Femenino</option>
@@ -55,7 +65,7 @@
                         </div>
                     </div>
                     <div style="text-align: right; margin-top: 30px;">
-                        <button type="submit" style="background: #4a6b0a; color: #ffffff; font-weight: bold; font-size: 18px; padding: 14px 40px; border-radius: 10px; border: none; cursor: pointer; letter-spacing: 0.5px; transition: background 0.2s;">
+                        <button type="submit" style="background: #4a6b0a; color: #ffffff; font-weight: 700; font-size: 17px; padding: 14px 40px; border-radius: 10px; border: none; cursor: pointer; letter-spacing: 0.5px; transition: background 0.2s;">
                             Comenzar Cuestionario →
                         </button>
                     </div>
@@ -65,7 +75,7 @@
 
         <div id="pantalla-test" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" class="hidden">
             <div style="margin-bottom: 30px;">
-                <div style="display: flex; justify-content: space-between; font-weight: bold; color: #555; margin-bottom: 8px; font-size: 15px;">
+                <div style="display: flex; justify-content: space-between; font-weight: 700; color: #555; margin-bottom: 8px; font-size: 14px;">
                     <span id="txt-progreso-bloque">Bloque 1 de 8</span>
                     <span id="txt-progreso-porcentaje">0% Completado</span>
                 </div>
@@ -78,31 +88,31 @@
             </div>
 
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
-                <button id="btn-anterior" onclick="cambiarBloque(-1)" style="background: white; color: #555; font-weight: bold; padding: 12px 25px; border-radius: 10px; border: 2px solid #ccc; cursor: pointer;">
+                <button id="btn-anterior" onclick="cambiarBloque(-1)" style="background: white; color: #555; font-weight: 700; padding: 12px 25px; border-radius: 10px; border: 2px solid #ccc; cursor: pointer; font-size: 15px;">
                     ← Anterior
                 </button>
-                <button id="btn-siguiente" onclick="cambiarBloque(1)" style="background: #4a6b0a; color: white; font-weight: bold; padding: 12px 35px; border-radius: 10px; border: none; cursor: pointer;">
+                <button id="btn-siguiente" onclick="cambiarBloque(1)" style="background: #4a6b0a; color: white; font-weight: 700; padding: 12px 35px; border-radius: 10px; border: none; cursor: pointer; font-size: 15px;">
                     Siguiente →
                 </button>
             </div>
         </div>
 
         <div id="pantalla-resultados" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" class="hidden">
-            <h2 style="color: #4a6500; font-size: 32px; text-align: center; margin-top: 0; margin-bottom: 5px;">📊 <strong>Tus Resultados</strong></h2>
-            <p id="res-metadata" style="text-align: center; color: #666; font-size: 16px; margin-bottom: 30px;"></p>
+            <h2 style="color: #4a6500; font-size: 32px; text-align: center; margin-top: 0; margin-bottom: 5px; font-weight: 700;">📊 <strong>Tus Resultados</strong></h2>
+            <p id="res-metadata" style="text-align: center; color: #666; font-size: 15px; margin-bottom: 30px; font-weight: 600;"></p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 rounded-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 rounded-xl mb-8">
                 <div class="w-full max-w-[340px] mx-auto aspect-square">
                     <canvas id="graficoRadar"></canvas>
                 </div>
 
                 <div class="overflow-x-auto">
-                    <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
                         <thead>
                             <tr style="border-b: 2px solid #ddd; text-align: left; color: #555;">
-                                <th style="padding-bottom: 12px; font-weight: bold;">Estilo</th>
-                                <th style="padding-bottom: 12px; text-align: center; font-weight: bold;">Puntaje</th>
-                                <th style="padding-bottom: 12px; text-align: right; font-weight: bold;">Preferencia</th>
+                                <th style="padding-bottom: 12px; font-weight: 700;">Estilo</th>
+                                <th style="padding-bottom: 12px; text-align: center; font-weight: 700;">Puntaje</th>
+                                <th style="padding-bottom: 12px; text-align: right; font-weight: 700;">Preferencia</th>
                             </tr>
                         </thead>
                         <tbody id="tabla-cuerpo" style="color: #333;">
@@ -111,19 +121,45 @@
                 </div>
             </div>
 
+            <div class="bg-white p-6 rounded-xl space-y-4 text-sm text-gray-700 leading-relaxed">
+                <h3 style="color: #4a6500; font-size: 20px; font-weight: 700; margin-bottom: 10px; border-bottom: 2px solid #e8e5f2; padding-bottom: 5px;">
+                    ¿Qué significan tus resultados?
+                </h3>
+                <div>
+                    <h4 style="color: #9DCA07; font-weight: 700; font-size: 15px;">🚀 Estilo Activo</h4>
+                    <p style="text-align: justify;">Te destaca el entusiasmo por las cosas nuevas. Sos de las personas que prefieren aprender viviendo la experiencia de forma directa, improvisando, jugando o trabajando en equipo. Te aburre un poco el análisis lento o tener que seguir pasos extremadamente minuciosos y repetitivos.</p>
+                </div>
+                <div>
+                    <h4 style="color: #7CA000; font-weight: 700; font-size: 15px;">🧠 Estilo Reflexivo</h4>
+                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincones antes de sacar una conclusión. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo.</p>
+                </div>
+                <div>
+                    <h4 style="color: #4A6500; font-weight: 700; font-size: 15px;">📐 Estilo Teórico</h4>
+                    <p style="text-align: justify;">Buscás la lógica, la coherencia y la estructura en todo lo que estudiás. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso. Te molesta la falta de orden, la confusión o las ideas desorganizadas.</p>
+                </div>
+                <div>
+                    <h4 style="color: #C8DB84; font-weight: 700; font-size: 15px;">🛠️ Estilo Pragmático</h4>
+                    <p style="text-align: justify;">Tu prioridad es la utilidad práctica. Te encanta experimentar, poner las ideas a prueba enseguida y descubrir si las cosas funcionan en el mundo real. Sos realista, concreto(a) y directo(a). Te impacientan las discusiones abstractas o eternas que no llevan a ninguna acción concreta.</p>
+                </div>
+            </div>
+
             <div id="btn-acciones-finales" style="text-align: center; margin-top: 35px; display: flex; justify-content: center; gap: 15px;">
-                <button onclick="window.print()" style="background: #4a6b0a; color: white; font-weight: bold; padding: 12px 30px; border-radius: 10px; border: none; cursor: pointer;">
+                <button onclick="window.print()" style="background: #4a6b0a; color: white; font-weight: 700; padding: 12px 30px; border-radius: 10px; border: none; cursor: pointer; font-size: 14px;">
                     📥 Guardar como PDF / Imprimir
                 </button>
-                <button onclick="window.location.reload()" style="background: #7CA000; color: white; font-weight: bold; padding: 12px 30px; border-radius: 10px; border: none; cursor: pointer;">
+                <button onclick="window.location.reload()" style="background: #7CA000; color: white; font-weight: 700; padding: 12px 30px; border-radius: 10px; border: none; cursor: pointer; font-size: 14px;">
                     Realizar otra consulta 🔄
                 </button>
             </div>
         </div>
+
+        <footer style="text-align: center; margin-top: 40px; font-size: 12px; color: #777; font-weight: 600;" class="no-print">
+            Sitio creado para el MOOC "Estrategias de aprendizaje" del Programa Descubrí UNCUYO, de la Universidad Nacional de Cuyo.
+        </footer>
     </div>
 
     <script>
-        // Mapeo adaptado con precisión milimétrica al Excel del usuario
+        // Matriz de preguntas adaptada al Excel del usuario
         const preguntas = [
             { id: 1, texto: "Tengo fama de decir lo que pienso claramente sin rodeos.", estilo: "pragmatico" },
             { id: 2, texto: "Estoy seguro(a) de lo que es bueno y lo que es malo, lo que está bien y lo que esta mal.", estilo: "teorico" },
@@ -141,7 +177,7 @@
             { id: 14, texto: "Admito y me ajusto a las normas sólo si me sirven para lograr mis objetivos.", estilo: "pragmatico" },
             { id: 15, texto: "Normalmente encajo bien con personas reflexivas, y me cuesta sintonizar con personas demasiado espontáneas, imprevisibles.", estilo: "teorico" },
             { id: 16, texto: "Escucho con más frecuencia que hablo.", estilo: "reflexivo" },
-            { id: 17, texto: "Prefiero las cosas estructuradas a las desordenadas.", estilo: "teorico" },
+            { id: 17, texto: "Prefiero las things estructuradas a las desordenadas.", estilo: "teorico" },
             { id: 18, texto: "Cuando poseo cualquier información, trato de interpretarla bien antes de manifestar alguna conclusión.", estilo: "reflexivo" },
             { id: 19, texto: "Antes de hacer algo estudio con cuidado sus ventajas e inconvenientes.", estilo: "reflexivo" },
             { id: 20, texto: "Me crezco con el reto de hacer algo nuevo y diferente.", estilo: "activo" },
@@ -265,12 +301,12 @@
                 const estiloNo = resActiva === "NO" ? "background: #7CA000; color: white; border-color: #7CA000;" : "background: white; color: #555; border-color: #ccc;";
 
                 div.innerHTML = `
-                    <div style="flex: 1; font-size: 17px; color: #333;">
+                    <div style="flex: 1; font-size: 16px; color: #333; font-weight: 500;">
                         <strong><span style="color: #7CA000;">${p.id}.</span></strong> ${p.texto}
                     </div>
                     <div style="display: flex; gap: 10px;">
-                        <button type="button" id="btn-si-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'SÍ')" style="padding: 8px 25px; font-weight: bold; border-radius: 8px; border: 2px solid; cursor: pointer; ${estiloSi}">SÍ</button>
-                        <button type="button" id="btn-no-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'NO')" style="padding: 8px 25px; font-weight: bold; border-radius: 8px; border: 2px solid; cursor: pointer; ${estiloNo}">NO</button>
+                        <button type="button" id="btn-si-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'SÍ')" style="padding: 8px 25px; font-weight: 700; border-radius: 8px; border: 2px solid; cursor: pointer; font-size: 14px; ${estiloSi}">SÍ</button>
+                        <button type="button" id="btn-no-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'NO')" style="padding: 8px 25px; font-weight: 700; border-radius: 8px; border: 2px solid; cursor: pointer; font-size: 14px; ${estiloNo}">NO</button>
                     </div>
                 `;
                 contenedor.appendChild(div);
@@ -351,9 +387,9 @@
                 const tr = document.createElement('tr');
                 tr.style.borderBottom = "1px solid #f0f0f0";
                 tr.innerHTML = `
-                    <td style="padding: 12px 0; font-weight: bold; color: ${est.color}">${est.label}</td>
-                    <td style="padding: 12px 0; text-align: center; font-weight: bold; font-size: 18px;">${pto} / 20</td>
-                    <td style="padding: 12px 0; text-align: right;"><span style="background: #f0f0f0; padding: 4px 12px; border-radius: 50px; font-size: 13px; font-weight: bold; color: #555;">${pref}</span></td>
+                    <td style="padding: 12px 0; font-weight: 700; color: ${est.color}">${est.label}</td>
+                    <td style="padding: 12px 0; text-align: center; font-weight: 700; font-size: 18px;">${pto} / 20</td>
+                    <td style="padding: 12px 0; text-align: right;"><span style="background: #f0f0f0; padding: 4px 12px; border-radius: 50px; font-size: 13px; font-weight: 700; color: #555;">${pref}</span></td>
                 `;
                 cuerpo.appendChild(tr);
             });
@@ -374,7 +410,7 @@
                     }]
                 },
                 options: {
-                    scales: { r: { suggestedMin: 0, suggestedMax: 20, ticks: { stepSize: 4 } } },
+                    scales: { r: { suggestedMin: 0, suggestedMax: 20, ticks: { font: { family: 'Montserrat' }, stepSize: 4 } } },
                     plugins: { legend: { display: false } }
                 }
             });
