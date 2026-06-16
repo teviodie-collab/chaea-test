@@ -32,10 +32,10 @@
             
             <div style="text-align: center; margin-bottom: 35px;">
                 <h1 style="color: #7ca000; font-size: 34px; margin: 0 0 15px 0; font-weight: 700; line-height: 1.2;">
-                    Cuestionario Honey-Alonso (CHAEA-Junior)
+                    Cuestionario Honey-Alonso (CHAEA)
                 </h1>
                 
-                <div style="font-size: 14px; color: #444; margin: 0 auto 25px auto; text-align: justify; line-height: 1.6; max-w-[780px]; background: rgba(255,255,255,0.5); padding: 22px; border-radius: 12px;">
+                <div style="font-size: 14px; color: #444; margin: 0 auto 25px auto; line-height: 1.6; max-w-[780px]; background: rgba(255,255,255,0.5); padding: 22px; border-radius: 12px; text-align: left;">
                     <p>
                         El Cuestionario de Estilos de Aprendizaje de Honey y Alonso (CHAEA) es una herramienta ampliamente utilizada en el ámbito educativo para identificar las preferencias individuales al momento de aprender. Basado en la teoría del aprendizaje experiencial de David Kolb y adaptado posteriormente por Peter Honey, Alan Mumford y Catalina Alonso, el cuestionario permite reconocer cómo cada persona aborda la adquisición y el procesamiento de nuevos conocimientos.
                     </p>
@@ -116,7 +116,7 @@
                 </div>
                 <div>
                     <h4 style="color: #7CA000; font-weight: 700; font-size: 15px;">🧠 Estilo Reflexivo</h4>
-                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincorners antes de sacar una conclusión. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo.</p>
+                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincones antes de sacar una conclusión. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo.</p>
                 </div>
                 <div>
                     <h4 style="color: #4A6500; font-weight: 700; font-size: 15px;">📐 Estilo Teórico</h4>
@@ -248,7 +248,6 @@
         }
 
         function seleccionarRespuesta(idPregunta, valor) {
-            responsesUsuario = respuestasUsuario;
             respuestasUsuario[idPregunta] = valor;
             const btnSi = document.getElementById(`btn-si-${idPregunta}`);
             const btnNo = document.getElementById(`btn-no-${idPregunta}`);
@@ -354,7 +353,7 @@
             document.getElementById('pantalla-test').classList.add('hidden');
             document.getElementById('pantalla-resultados').classList.remove('hidden');
 
-            document.getElementById('res-metadata').innerText = `Fecha de resolución: ${datosEstudiante.fecha}`;
+            document.getElementById('res-metadata').innerText = `Fecha: ${datosEstudiante.fecha}`;
 
             const cuerpo = document.getElementById('tabla-cuerpo');
             cuerpo.innerHTML = '';
