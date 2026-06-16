@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario Honey-Alonso (CHAEA-Junior)</title>
+    <!-- Importación de Tipografía Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
 
     <div class="max-w-[900px] mx-auto">
         
+        <!-- PANTALLA DE REGISTRO E INTRODUCCIÓN -->
         <div id="pantalla-registro" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
             
             <div style="text-align: center; margin-bottom: 35px;">
@@ -35,7 +37,7 @@
                     Cuestionario Honey-Alonso (CHAEA-Junior)
                 </h1>
                 <div style="font-size: 15px; color: #444; margin: 0 auto 25px auto; text-align: justify; line-height: 1.6; max-w-[780px]; background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
-                    <strong>Créditos del Cuestionario:</strong> Este instrumento es una adaptación científica del clásico Cuestionario de Estilos de Aprendizaje de Honey y Alonso (CHAEA), validada específicamente para estudiantes de nivel Primario y Secundario en base a las investigaciones del especialista Juan Francisco Sotillo Delgado (UNED, España). Su estructura lúdica y directa permite identificar cómo procesás y asimilás las nuevas experiencias educativas según una concepción cíclica del aprendizaje.
+                    <strong>Créditos del Cuestionario:</strong> Este instrumento es una adaptación científica del clásico Cuestionario de Estilos de Aprendizaje de Honey y Alonso (CHAEA), validada específicamente para estudiantes de nivel Primario y Secundario en base a las investigaciones del especialista Juan Francisco Sotillo Delgado (UNED, España)[cite: 1]. Su estructura lúdica y directa permite identificar cómo procesás y asimilás las nuevas experiencias educativas según una concepción cíclica del aprendizaje[cite: 1].
                 </div>
                 <p style="font-size: 16px; color: #666; margin: 0; font-weight: 600;">
                     Completá tus datos para comenzar el test automatizado.
@@ -51,7 +53,7 @@
                         </div>
                         <div>
                             <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Edad *</label>
-                            <input type="number" id="reg-edad" required min="9" max="19" placeholder="Ej: 13" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; font-family: inherit;">
+                            <input type="number" id="reg-edad" required min="9" max="19" placeholder="" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; font-family: inherit;">
                         </div>
                         <div>
                             <label style="display: block; font-weight: 600; color: #555; margin-bottom: 5px; font-size: 15px;">Género *</label>
@@ -73,6 +75,7 @@
             </div>
         </div>
 
+        <!-- PANTALLA DEL TEST -->
         <div id="pantalla-test" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" class="hidden">
             <div style="margin-bottom: 30px;">
                 <div style="display: flex; justify-content: space-between; font-weight: 700; color: #555; margin-bottom: 8px; font-size: 14px;">
@@ -97,6 +100,7 @@
             </div>
         </div>
 
+        <!-- PANTALLA DE RESULTADOS -->
         <div id="pantalla-resultados" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" class="hidden">
             <h2 style="color: #4a6500; font-size: 32px; text-align: center; margin-top: 0; margin-bottom: 5px; font-weight: 700;">📊 <strong>Tus Resultados</strong></h2>
             <p id="res-metadata" style="text-align: center; color: #666; font-size: 15px; margin-bottom: 30px; font-weight: 600;"></p>
@@ -121,25 +125,26 @@
                 </div>
             </div>
 
+            <!-- EXPLICACIÓN DE LOS ESTILOS ADAPTADA A ADOLESCENTES -->
             <div class="bg-white p-6 rounded-xl space-y-4 text-sm text-gray-700 leading-relaxed">
                 <h3 style="color: #4a6500; font-size: 20px; font-weight: 700; margin-bottom: 10px; border-bottom: 2px solid #e8e5f2; padding-bottom: 5px;">
                     ¿Qué significan tus resultados?
                 </h3>
                 <div>
                     <h4 style="color: #9DCA07; font-weight: 700; font-size: 15px;">🚀 Estilo Activo</h4>
-                    <p style="text-align: justify;">Te destaca el entusiasmo por las cosas nuevas. Sos de las personas que prefieren aprender viviendo la experiencia de forma directa, improvisando, jugando o trabajando en equipo. Te aburre un poco el análisis lento o tener que seguir pasos extremadamente minuciosos y repetitivos.</p>
+                    <p style="text-align: justify;">Te destaca el entusiasmo por las cosas nuevas[cite: 1]. Sos de las personas que prefieren aprender viviendo la experiencia de forma directa, improvisando, jugando o trabajando en equipo[cite: 1]. Te aburre un poco el análisis lento o tener que seguir pasos extremadamente minuciosos y repetitivos[cite: 1].</p>
                 </div>
                 <div>
                     <h4 style="color: #7CA000; font-weight: 700; font-size: 15px;">🧠 Estilo Reflexivo</h4>
-                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincones antes de sacar una conclusión. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo.</p>
+                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincones antes de sacar una conclusión[cite: 1]. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe[cite: 1]. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo[cite: 1].</p>
                 </div>
                 <div>
                     <h4 style="color: #4A6500; font-weight: 700; font-size: 15px;">📐 Estilo Teórico</h4>
-                    <p style="text-align: justify;">Buscás la lógica, la coherencia y la estructura en todo lo que estudiás. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso. Te molesta la falta de orden, la confusión o las ideas desorganizadas.</p>
+                    <p style="text-align: justify;">Buscás la lógica, la coherencia y la estructura en todo lo que estudiás[cite: 1]. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso[cite: 1]. Te molesta la falta de orden, la confusión o las ideas desorganizadas[cite: 1].</p>
                 </div>
                 <div>
                     <h4 style="color: #C8DB84; font-weight: 700; font-size: 15px;">🛠️ Estilo Pragmático</h4>
-                    <p style="text-align: justify;">Tu prioridad es la utilidad práctica. Te encanta experimentar, poner las ideas a prueba enseguida y descubrir si las cosas funcionan en el mundo real. Sos realista, concreto(a) y directo(a). Te impacientan las discusiones abstractas o eternas que no llevan a ninguna acción concreta.</p>
+                    <p style="text-align: justify;">Tu prioridad es la utilidad práctica. Te encanta experimentar, poner las ideas a prueba enseguida y descubrir si las cosas funcionan en el mundo real[cite: 1]. Sos realista, concreto(a) y directo(a)[cite: 1]. Te impacientan las discusiones abstractas o eternas que no llevan a ninguna acción concreta[cite: 1].</p>
                 </div>
             </div>
 
@@ -153,13 +158,13 @@
             </div>
         </div>
 
+        <!-- COPYRIGHT MODIFICADO -->
         <footer style="text-align: center; margin-top: 40px; font-size: 12px; color: #777; font-weight: 600;" class="no-print">
-            Sitio creado para el MOOC "Estrategias de aprendizaje" del Programa Descubrí UNCUYO, de la Universidad Nacional de Cuyo.
+            Sitio creado con fines educativos para el MOOC "Estrategias de aprendizaje" del Programa Descubrí UNCUYO, de la Universidad Nacional de Cuyo en 
         </footer>
     </div>
 
     <script>
-        // Matriz de preguntas adaptada al Excel del usuario
         const preguntas = [
             { id: 1, texto: "Tengo fama de decir lo que pienso claramente sin rodeos.", estilo: "pragmatico" },
             { id: 2, texto: "Estoy seguro(a) de lo que es bueno y lo que es malo, lo que está bien y lo que esta mal.", estilo: "teorico" },
@@ -238,7 +243,7 @@
             { id: 75, texto: "Me aburro enseguida con el trabajo metódico y minucioso.", estilo: "activo" },
             { id: 76, texto: "La gente con frecuencia cree que soy poco sensible a sus sentimientos.", estilo: "pragmatico" },
             { id: 77, texto: "Suelo dejarme llevar por mis intuiciones.", estilo: "activo" },
-            { id: 78, texto: "Si trabajo en grupo procuro que se siga un método y un orden.", estilo: "teorico" },
+            { id: 78, si: true, texto: "Si trabajo en grupo procuro que se siga un método y un orden.", estilo: "teorico" },
             { id: 79, texto: "Con frecuencia me interesa averiguar lo que piensa la gente.", estilo: "reflexivo" },
             { id: 80, texto: "Esquivo los temas subjetivos, ambiguos y poco claros.", estilo: "teorico" }
         ];
@@ -297,16 +302,16 @@
 
                 const resActiva = respuestasUsuario[p.id];
                 
-                const estiloSi = resActiva === "SÍ" ? "background: #7CA000; color: white; border-color: #7CA000;" : "background: white; color: #555; border-color: #ccc;";
-                const estiloNo = resActiva === "NO" ? "background: #7CA000; color: white; border-color: #7CA000;" : "background: white; color: #555; border-color: #ccc;";
+                const styleSi = resActiva === "SÍ" ? "background: #7CA000; color: white; border-color: #7CA000;" : "background: white; color: #555; border-color: #ccc;";
+                const styleNo = resActiva === "NO" ? "background: #7CA000; color: white; border-color: #7CA000;" : "background: white; color: #555; border-color: #ccc;";
 
                 div.innerHTML = `
                     <div style="flex: 1; font-size: 16px; color: #333; font-weight: 500;">
                         <strong><span style="color: #7CA000;">${p.id}.</span></strong> ${p.texto}
                     </div>
                     <div style="display: flex; gap: 10px;">
-                        <button type="button" id="btn-si-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'SÍ')" style="padding: 8px 25px; font-weight: 700; border-radius: 8px; border: 2px solid; cursor: pointer; font-size: 14px; ${estiloSi}">SÍ</button>
-                        <button type="button" id="btn-no-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'NO')" style="padding: 8px 25px; font-weight: 700; border-radius: 8px; border: 2px solid; cursor: pointer; font-size: 14px; ${estiloNo}">NO</button>
+                        <button type="button" id="btn-si-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'SÍ')" style="padding: 8px 25px; font-weight: 700; border-radius: 8px; border: 2px solid; cursor: pointer; font-size: 14px; ${styleSi}">SÍ</button>
+                        <button type="button" id="btn-no-${p.id}" onclick="seleccionarRespuesta(${p.id}, 'NO')" style="padding: 8px 25px; font-weight: 700; border-radius: 8px; border: 2px solid; cursor: pointer; font-size: 14px; ${styleNo}">NO</button>
                     </div>
                 `;
                 contenedor.appendChild(div);
