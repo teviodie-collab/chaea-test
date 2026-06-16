@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario Honey-Alonso (CHAEA-Junior)</title>
-    <!-- Importación de Tipografía Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -29,16 +28,25 @@
 
     <div class="max-w-[900px] mx-auto">
         
-        <!-- PANTALLA DE REGISTRO E INTRODUCCIÓN -->
         <div id="pantalla-registro" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
             
             <div style="text-align: center; margin-bottom: 35px;">
                 <h1 style="color: #7ca000; font-size: 34px; margin: 0 0 15px 0; font-weight: 700; line-height: 1.2;">
                     Cuestionario Honey-Alonso (CHAEA-Junior)
                 </h1>
-                <div style="font-size: 15px; color: #444; margin: 0 auto 25px auto; text-align: justify; line-height: 1.6; max-w-[780px]; background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
-                    <strong>Créditos del Cuestionario:</strong> Este instrumento es una adaptación científica del clásico Cuestionario de Estilos de Aprendizaje de Honey y Alonso (CHAEA), validada específicamente para estudiantes de nivel Primario y Secundario en base a las investigaciones del especialista Juan Francisco Sotillo Delgado (UNED, España)[cite: 1]. Su estructura lúdica y directa permite identificar cómo procesás y asimilás las nuevas experiencias educativas según una concepción cíclica del aprendizaje[cite: 1].
+                
+                <div style="font-size: 14px; color: #444; margin: 0 auto 25px auto; text-align: justify; line-height: 1.6; max-w-[780px]; background: rgba(255,255,255,0.5); padding: 22px; border-radius: 12px; space-y-3;">
+                    <p>
+                        El Cuestionario de Estilos de Aprendizaje de Honey y Alonso (CHAEA) es una herramienta ampliamente utilizada en el ámbito educativo para identificar las preferencias individuales al momento de aprender. Basado en la teoría del aprendizaje experiencial de David Kolb y adaptado posteriormente por Peter Honey, Alan Mumford y Catalina Alonso, el cuestionario permite reconocer cómo cada persona aborda la adquisición y el procesamiento de nuevos conocimientos.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        A través de 80 afirmaciones de respuesta simple, el CHAEA evalúa cuatro estilos de aprendizaje: Activo, Reflexivo, Teórico y Pragmático. Los resultados no determinan capacidades ni niveles de rendimiento, sino que ofrecen información valiosa para comprender las propias preferencias de aprendizaje, favoreciendo estrategias de estudio más efectivas y un mejor aprovechamiento de las experiencias educativas.
+                    </p>
+                    <p style="margin-top: 14px; padding-top: 10px; border-top: 1px dashed #cbd5e1; font-size: 13px; color: #555;">
+                        <strong>Créditos del Cuestionario:</strong> Este instrumento es una adaptación científica del cuestionario CHAEA tradicional, validada específicamente para estudiantes de nivel Primario y Secundario (9-14 años) en base a las investigaciones del especialista Juan Francisco Sotillo Delgado (UNED, España). Su estructura lúdica y directa permite identificar cómo procesás y asimilás las nuevas experiencias educativas según una concepción cíclica del aprendizaje.
+                    </p>
                 </div>
+                
                 <p style="font-size: 16px; color: #666; margin: 0; font-weight: 600;">
                     Completá tus datos para comenzar el test automatizado.
                 </p>
@@ -75,7 +83,6 @@
             </div>
         </div>
 
-        <!-- PANTALLA DEL TEST -->
         <div id="pantalla-test" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" class="hidden">
             <div style="margin-bottom: 30px;">
                 <div style="display: flex; justify-content: space-between; font-weight: 700; color: #555; margin-bottom: 8px; font-size: 14px;">
@@ -100,7 +107,6 @@
             </div>
         </div>
 
-        <!-- PANTALLA DE RESULTADOS -->
         <div id="pantalla-resultados" style="background: #e8e5f2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);" class="hidden">
             <h2 style="color: #4a6500; font-size: 32px; text-align: center; margin-top: 0; margin-bottom: 5px; font-weight: 700;">📊 <strong>Tus Resultados</strong></h2>
             <p id="res-metadata" style="text-align: center; color: #666; font-size: 15px; margin-bottom: 30px; font-weight: 600;"></p>
@@ -125,26 +131,25 @@
                 </div>
             </div>
 
-            <!-- EXPLICACIÓN DE LOS ESTILOS ADAPTADA A ADOLESCENTES -->
             <div class="bg-white p-6 rounded-xl space-y-4 text-sm text-gray-700 leading-relaxed">
                 <h3 style="color: #4a6500; font-size: 20px; font-weight: 700; margin-bottom: 10px; border-bottom: 2px solid #e8e5f2; padding-bottom: 5px;">
                     ¿Qué significan tus resultados?
                 </h3>
                 <div>
                     <h4 style="color: #9DCA07; font-weight: 700; font-size: 15px;">🚀 Estilo Activo</h4>
-                    <p style="text-align: justify;">Te destaca el entusiasmo por las cosas nuevas[cite: 1]. Sos de las personas que prefieren aprender viviendo la experiencia de forma directa, improvisando, jugando o trabajando en equipo[cite: 1]. Te aburre un poco el análisis lento o tener que seguir pasos extremadamente minuciosos y repetitivos[cite: 1].</p>
+                    <p style="text-align: justify;">Te destaca el entusiasmo por las cosas nuevas. Sos de las personas que prefieren aprender viviendo la experiencia de forma directa, improvisando, jugando o trabajando en equipo. Te aburre un poco el análisis lento o tener que seguir pasos extremadamente minuciosos y repetitivos.</p>
                 </div>
                 <div>
                     <h4 style="color: #7CA000; font-weight: 700; font-size: 15px;">🧠 Estilo Reflexivo</h4>
-                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincones antes de sacar una conclusión[cite: 1]. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe[cite: 1]. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo[cite: 1].</p>
+                    <p style="text-align: justify;">Sos observador(a) y te gusta mirar las situaciones desde diferentes rincones antes de sacar una conclusión. Preferís tomarte tu tiempo para pensar bien las respuestas y recolectar datos en vez de actuar de golpe. Te sentís más cómodo(a) en un rol de análisis prudente y concienzudo.</p>
                 </div>
                 <div>
                     <h4 style="color: #4A6500; font-weight: 700; font-size: 15px;">📐 Estilo Teórico</h4>
-                    <p style="text-align: justify;">Buscás la lógica, la coherencia y la estructura en todo lo que estudiás[cite: 1]. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso[cite: 1]. Te molesta la falta de orden, la confusión o las ideas desorganizadas[cite: 1].</p>
+                    <p style="text-align: justify;">Buscás la lógica, la coherencia y la estructura en todo lo que estudiás. Te gusta integrar los hechos en teorías sólidas, analizando de forma objetiva y buscando los principios o leyes que explican los problemas paso a paso. Te molesta la falta de orden, la confusión o las ideas desorganizadas.</p>
                 </div>
                 <div>
                     <h4 style="color: #C8DB84; font-weight: 700; font-size: 15px;">🛠️ Estilo Pragmático</h4>
-                    <p style="text-align: justify;">Tu prioridad es la utilidad práctica. Te encanta experimentar, poner las ideas a prueba enseguida y descubrir si las cosas funcionan en el mundo real[cite: 1]. Sos realista, concreto(a) y directo(a)[cite: 1]. Te impacientan las discusiones abstractas o eternas que no llevan a ninguna acción concreta[cite: 1].</p>
+                    <p style="text-align: justify;">Tu prioridad es la utilidad práctica. Te encanta experimentar, poner las ideas a prueba enseguida y descubrir si las cosas funcionan en el mundo real. Sos realista, concreto(a) y directo(a). Te impacientan las discusiones abstractas o eternas que no llevan a ninguna acción concreta.</p>
                 </div>
             </div>
 
@@ -158,8 +163,7 @@
             </div>
         </div>
 
-        <!-- COPYRIGHT MODIFICADO -->
-        <footer style="text-align: center; margin-top: 40px; font-size: 12px; color: #777; font-weight: 600;" class="no-print">
+        <footer style="text-align: center; margin-top: 40px; font-size: 12px; color: #777; font-weight: 600; line-height: 1.5;" class="no-print">
             Sitio creado con fines educativos para el MOOC "Estrategias de aprendizaje" del Programa Descubrí UNCUYO, de la Universidad Nacional de Cuyo en 
         </footer>
     </div>
@@ -182,7 +186,7 @@
             { id: 14, texto: "Admito y me ajusto a las normas sólo si me sirven para lograr mis objetivos.", estilo: "pragmatico" },
             { id: 15, texto: "Normalmente encajo bien con personas reflexivas, y me cuesta sintonizar con personas demasiado espontáneas, imprevisibles.", estilo: "teorico" },
             { id: 16, texto: "Escucho con más frecuencia que hablo.", estilo: "reflexivo" },
-            { id: 17, texto: "Prefiero las things estructuradas a las desordenadas.", estilo: "teorico" },
+            { id: 17, texto: "Prefiero las cosas estructuradas a las desordenadas.", estilo: "teorico" },
             { id: 18, texto: "Cuando poseo cualquier información, trato de interpretarla bien antes de manifestar alguna conclusión.", estilo: "reflexivo" },
             { id: 19, texto: "Antes de hacer algo estudio con cuidado sus ventajas e inconvenientes.", estilo: "reflexivo" },
             { id: 20, texto: "Me crezco con el reto de hacer algo nuevo y diferente.", estilo: "activo" },
@@ -243,7 +247,7 @@
             { id: 75, texto: "Me aburro enseguida con el trabajo metódico y minucioso.", estilo: "activo" },
             { id: 76, texto: "La gente con frecuencia cree que soy poco sensible a sus sentimientos.", estilo: "pragmatico" },
             { id: 77, texto: "Suelo dejarme llevar por mis intuiciones.", estilo: "activo" },
-            { id: 78, si: true, texto: "Si trabajo en grupo procuro que se siga un método y un orden.", estilo: "teorico" },
+            { id: 78, texto: "Si trabajo en grupo procuro que se siga un método y un orden.", estilo: "teorico" },
             { id: 79, texto: "Con frecuencia me interesa averiguar lo que piensa la gente.", estilo: "reflexivo" },
             { id: 80, texto: "Esquivo los temas subjetivos, ambiguos y poco claros.", estilo: "teorico" }
         ];
