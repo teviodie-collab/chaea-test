@@ -123,8 +123,9 @@
     </div>
 
     <script>
+        // Mapeo adaptado con precisión milimétrica al Excel del usuario
         const preguntas = [
-            { id: 1, texto: "Tengo fama de decir lo que pienso claramente sin rodeos.", estilo: "activo" },
+            { id: 1, texto: "Tengo fama de decir lo que pienso claramente sin rodeos.", estilo: "pragmatico" },
             { id: 2, texto: "Estoy seguro(a) de lo que es bueno y lo que es malo, lo que está bien y lo que esta mal.", estilo: "teorico" },
             { id: 3, texto: "Muchas veces actúo sin mirar las consecuencias.", estilo: "activo" },
             { id: 4, texto: "Normalmente trato de resolver los problemas metódicamente y paso a paso.", estilo: "teorico" },
@@ -148,7 +149,7 @@
             { id: 22, texto: "Cuando hay una discusión no me gusta ir con rodeos.", estilo: "pragmatico" },
             { id: 23, texto: "Me disgusta implicarme afectivamente en mi ambiente de trabajo, prefiero mantener relaciones distantes.", estilo: "teorico" },
             { id: 24, texto: "Me gustan más las personas realistas y concretas que las teóricas.", estilo: "pragmatico" },
-            { id: 25, texto: "Me cuesta ser creativo(a), romper estructuras.", estilo: "reflexivo" },
+            { id: 25, texto: "Me cuesta ser creativo(a), romper estructuras.", estilo: "teorico" },
             { id: 26, texto: "Me siento agusto con personas espontáneas y divertidas.", estilo: "activo" },
             { id: 27, texto: "La mayoría de las veces expreso abiertamente cómo me siento.", estilo: "activo" },
             { id: 28, texto: "Me gusta analizar y dar vueltas a las cosas.", estilo: "reflexivo" },
@@ -174,11 +175,11 @@
             { id: 48, texto: "En conjunto hablo más que escucho.", estilo: "activo" },
             { id: 49, texto: "Prefiero distanciarme de los hechos y observarlos desde otra perspectiva.", estilo: "reflexivo" },
             { id: 50, texto: "Estoy convencido(a) que debe imponerse la lógica y el razonamiento.", estilo: "teorico" },
-            { id: 51, texto: "Me gusta buscar nuevas experiences.", estilo: "activo" },
+            { id: 51, texto: "Me gusta buscar nuevas experiencias.", estilo: "activo" },
             { id: 52, texto: "Me gusta experimentar y aplicar las cosas.", estilo: "pragmatico" },
             { id: 53, texto: "Pienso que debemos llegar pronto al grano, al meollo de los temas.", estilo: "pragmatico" },
             { id: 54, texto: "Siempre trato de conseguir conclusiones e ideas claras.", estilo: "teorico" },
-            { id: 55, texto: "Prefiero discutir cuestiones concretas y no perder el tiempo con charlas vacías.", estilo: "pragmatico" },
+            { id: 55, texto: "Prefiero discutir cuestiones concretas y no perder el tiempo con charlas vacías.", estilo: "reflexivo" },
             { id: 56, texto: "Me impaciento cuando me dan explicaciones irrelevantes e incoherentes.", estilo: "pragmatico" },
             { id: 57, texto: "Compruebo antes si las cosas funcionan realmente.", estilo: "pragmatico" },
             { id: 58, texto: "Hago varios borradores antes de la redacción definitiva de un trabajo.", estilo: "reflexivo" },
@@ -199,11 +200,11 @@
             { id: 73, texto: "No me importa hacer todo lo necesario para que sea efectivo mi trabajo.", estilo: "pragmatico" },
             { id: 74, texto: "Con frecuencia soy una de las personas que más anima las fiestas.", estilo: "activo" },
             { id: 75, texto: "Me aburro enseguida con el trabajo metódico y minucioso.", estilo: "activo" },
-            { id: 76, texto: "La gente con frecuencia cree que soy poco sensible a sus sentimientos.", estilo: "teorico" },
+            { id: 76, texto: "La gente con frecuencia cree que soy poco sensible a sus sentimientos.", estilo: "pragmatico" },
             { id: 77, texto: "Suelo dejarme llevar por mis intuiciones.", estilo: "activo" },
-            { id: 78, si: true, texto: "Si trabajo en grupo procuro que se siga un método y un orden.", estilo: "teorico" },
+            { id: 78, texto: "Si trabajo en grupo procuro que se siga un método y un orden.", estilo: "teorico" },
             { id: 79, texto: "Con frecuencia me interesa averiguar lo que piensa la gente.", estilo: "reflexivo" },
-            { id: 80, texto: "Esquivo los temas subjetivos, ambiguos y poco claros.", estilo: "pragmatico" }
+            { id: 80, texto: "Esquivo los temas subjetivos, ambiguos y poco claros.", estilo: "teorico" }
         ];
 
         let respuestasUsuario = {};
